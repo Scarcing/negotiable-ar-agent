@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc96c47a3c25ef4d86d0dd8e0726fe5, type: 3}
+  m_Name: AgentSettings
+  m_EditorClassIdentifier: Assembly-CSharp::NegotiableAR.AgentSettings
+  serviceUrl: http://127.0.0.1:8765
+  accessToken: 
+  task:
+    name: Creative tabletop exploration
+    goal: Explore an arrangement using the available pieces. The user decides what
+      to make.
+    distinctiveItems:
+    - colored geometric pieces
+    - construction bricks
+    constraints: No predefined solution. Ask about intent before correcting creative
+      choices.
+  policy:
+    pauseSeconds: 12
+    cooldownSeconds: 25
+    offerTimeoutSeconds: 10
+    staleSeconds: 8
+    minimumConfidence: 0.55
+    maximumCooldownSeconds: 120
+  sampleInterval: 1.5
+  requestTimeoutSeconds: 6
+  imageWidth: 512
+  jpegQuality: 65
+  focusForeground: 1
+  taskImageRegion:
+    serializedVersion: 2
+    x: 0.12
+    y: 0.04
+    width: 0.76
+    height: 0.72
+  useDepthBackgroundMask: 1
+  foregroundDistanceMetres: 1.4
+  depthEdgeToleranceMetres: 0.12
+  showJointMarkers: 1
+  speak: 1
+  logObservations: 0

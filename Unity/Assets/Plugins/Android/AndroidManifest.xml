@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="horizonos.permission.HEADSET_CAMERA" />
+  <uses-permission android:name="com.oculus.permission.USE_SCENE" />
+  <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="oculus.software.handtracking" android:required="false" />
+  <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="true" />
+  <application android:theme="@style/UnityThemeSelector" android:usesCleartextTraffic="false" tools:replace="android:usesCleartextTraffic">
+    <activity android:name="com.unity3d.player.UnityPlayerGameActivity" android:theme="@style/BaseUnityGameActivityTheme" android:exported="true" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode">
+      <meta-data android:name="android.app.lib_name" android:value="game" />
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="com.oculus.intent.category.VR" />
+      </intent-filter>
+      <meta-data android:name="com.oculus.vr.focusaware" android:value="true" />
+    </activity>
+    <meta-data android:name="com.oculus.supportedDevices" android:value="quest3|quest3s" />
+  </application>
+</manifest>

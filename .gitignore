@@ -1,0 +1,17 @@
+.tools/
+*.log
+Unity/[Ll]ibrary/
+Unity/[Tt]emp/
+Unity/[Oo]bj/
+Unity/[Bb]uilds/
+Unity/[Ll]ogs/
+Unity/[Uu]ser[Ss]ettings/
+Unity/.vs/
+Unity/*.csproj
+Unity/*.sln*
+server/__pycache__/
+server/.venv/
+server/runtime/
+tests/**/bin/
+tests/**/obj/
+.env
